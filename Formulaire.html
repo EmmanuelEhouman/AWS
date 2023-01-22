@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENREGISTREMENT</title>
+    <link rel="stylesheet" href="CSS1.css">
+</head>
+<body>
+    <!--Formulaire-->
+    <form action="php.php" method="post">
+        <fieldset class="anim-bord">
+            <legend id="titre_form"><u> ENREGISTREMENT </u></legend> <pre>
+
+    Nom : <input type="text" name="nom" id="nm" title="Entrez le nom" onkeypress="return event.charCode != 32" required >
+
+Prenom : <input type="text" name="prenom" id="pnom" title="Entrez le prenom" required >
+
+Contact : <input type="text" name="contact" id="cont" title="Entrez le contact" onkeypress="return event.charCode != 32" maxlength="10" required >
+
+Adresse : <input type="text" name="adresse" id="adr" title="Entrez l'adresse" required >
+    </pre>
+            
+            <pre><center><button type="submit" id="btn-ajout" title="Cliquez pour enregistrer" id="b1" name="envoyer">AJOUTER</button>                    <button type="reset" id="btn-vider" title="Cliquez pour vider les zones de saisie" id="b2">VIDER</button></center>
+            </pre>        
+            <p>Vous pouvez <a href="liste.php" title="Cliquez pour consulter la liste des participants">consulter la liste des participants</a></p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
